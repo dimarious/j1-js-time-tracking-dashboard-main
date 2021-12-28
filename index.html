@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Frontend Mentor | Time Tracking Dashboard</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <!-- Profile Name -->
+      <h1 class="header__h1">
+        <span class="header__h1--report-for">Report for</span>
+        <span class="header__h1--name">Jeremy Robson</span>
+      </h1>
+
+      <!-- Select Periodicity -->
+      <fieldset class="header__report-periodicity">
+        <legend class="sr-only">Select a periodicity for the report</legend>
+
+        <input
+          class="sr-only header__radio"
+          type="radio"
+          id="daily"
+          name="periodicity"
+          value="daily"
+          checked>
+        <label class="header__radio-label" for="daily">Daily</label>
+
+        <input
+          class="sr-only header__radio"
+          type="radio"
+          id="weekly"
+          name="periodicity"
+          value="weekly">
+        <label class="header__radio-label" for="weekly">Weekly</label>
+        
+        <input
+          class="sr-only header__radio"
+          type="radio"
+          id="monthly"
+          name="periodicity"
+          value="monthly">
+        <label class="header__radio-label" for="monthly">Monthly</label>
+
+      </fieldset>
+
+    </header>
+    
+    <main class="report">
+
+      <!-- Report -->
+      <ul class="report__grid" aria-live="polite">
+
+        <!-- Work -->
+        <li class="report__grid-item report__grid-item--work">
+          <a class="card" href="#">
+            <h2 class="card__h2">
+              <span class="card__subject">Work</span>
+              <svg class="card__ellipsis" aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
+            </h2>
+            <p class="card__current-week">
+              <span class="sr-only">Current Week -</span>
+              <span class="card__current-week--figure">5hrs</span>
+            </p>
+            <p class="card__previous">Previous - 7hrs</p>
+          </a>
+        </li>
+
+        <!-- Play -->
+        <li class="report__grid-item report__grid-item--play">
+          <a class="card" href="#">
+            <h2 class="card__h2">
+              <span class="card__subject">Play</span>
+              <svg class="card__ellipsis" aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
+            </h2>
+            <p class="card__current-week">
+              <span class="sr-only">Current Week -</span>
+              <span class="card__current-week--figure">1hr</span>
+            </p>
+            <p class="card__previous">Previous - 2hrs</p>
+          </a>
+        </li>
+
+        <!-- Study -->
+        <li class="report__grid-item report__grid-item--study">
+          <a class="card" href="#">
+            <h2 class="card__h2">
+              <span class="card__subject">Study</span>
+              <svg class="card__ellipsis" aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
+            </h2>
+            <p class="card__current-week">
+              <span class="sr-only">Current Week -</span>
+              <span class="card__current-week--figure">0hrs</span>
+            </p>
+            <p class="card__previous">Previous - 1hr</p>
+          </a>
+        </li>
+
+        <!-- Exercise -->
+        <li class="report__grid-item report__grid-item--exercise">
+          <a class="card" href="#">
+            <h2 class="card__h2">
+              <span class="card__subject">Exercise</span>
+              <svg class="card__ellipsis" aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
+            </h2>
+            <p class="card__current-week">
+              <span class="sr-only">Current Week -</span>
+              <span class="card__current-week--figure">1hr</span>
+            </p>
+            <p class="card__previous">Previous - 1hr</p>
+          </a>
+        </li>
+
+        <!-- Social -->
+        <li class="report__grid-item report__grid-item--social">
+          <a class="card" href="#">
+            <h2 class="card__h2">
+              <span class="card__subject">Social</span>
+              <svg class="card__ellipsis" aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
+            </h2>
+            <p class="card__current-week">
+              <span class="sr-only">Current Week -</span>
+              <span class="card__current-week--figure">1hr</span>
+            </p>
+            <p class="card__previous">Previous - 3hrs</p>
+          </a>
+        </li>
+
+        <!-- Self Care -->
+        <li class="report__grid-item report__grid-item--self-care">
+          <a class="card" href="#">
+            <h2 class="card__h2">
+              <span class="card__subject">Self Care</span>
+              <svg class="card__ellipsis" aria-hidden="true" width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
+            </h2>
+            <p class="card__current-week">
+              <span class="sr-only">Current Week -</span>
+              <span class="card__current-week--figure">0hrs</span>
+            </p>
+            <p class="card__previous">Previous - 1hr</p>
+          </a>
+        </li>
+      </ul>
+
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+
+</html>
